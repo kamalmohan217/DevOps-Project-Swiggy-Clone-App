@@ -19,7 +19,7 @@ pipeline{
         stage("clone-code"){
             steps{
                 cleanWs()
-                checkout scmGit(branches: [[name: '${COMMIT_ID}']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-cred', url: 'https://github.com/singhritesh85/Swiggy-Clone-App.git']])
+                checkout scmGit(branches: [[name: '${COMMIT_ID}']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-cred', url: 'https://github.com/kamalmohan217/Swiggy-Clone-App.git']])
             }
         }
         stage("SonarAnalysis"){
@@ -64,7 +64,7 @@ pipeline{
             steps{
                 //sh 'yes|argocd login argocd.singhritesh85.com --username admin --password Admin@123'
                 sh 'argocd login argocd.singhritesh85.com --username admin --password Admin@123 --skip-test-tls  --grpc-web'
-                sh 'argocd app create swiggy-clone --project default --repo https://github.com/singhritesh85/helm-repo-for-swiggy-clone.git --path ./folo --dest-namespace swiggy --dest-server https://kubernetes.default.svc --helm-set service.port=80 --helm-set image.repository=${REPO_NAME} --helm-set image.tag=${TAG_NAME} --helm-set replicaCount=${REPLICA_COUNT} --upsert'
+                sh 'argocd app create swiggy-clone --project default --repo https://github.com/kamalmohan217/helm-repo-for-swiggy-clone.git --path ./folo --dest-namespace swiggy --dest-server https://kubernetes.default.svc --helm-set service.port=80 --helm-set image.repository=${REPO_NAME} --helm-set image.tag=${TAG_NAME} --helm-set replicaCount=${REPLICA_COUNT} --upsert'
                 sh 'argocd app sync swiggy-clone'
             }
         }
