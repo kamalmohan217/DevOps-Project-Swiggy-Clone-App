@@ -5,7 +5,7 @@
 Install sonarqube-scanner plugin in Jenkins as shown in the screenshot attached below.
 ![image](https://github.com/user-attachments/assets/96333f91-45d3-4f04-8a3b-f0ac1a205c9f)
 
-Screenshot of SonarQube and Kubernetes pods for swiggy app (ReactJs based User Interface which runs on port 3000) is as shown in the screenshot attached below.
+Screenshot of SonarQube and Kubernetes pods for swiggy app (ReactJS based User Interface which runs on port 3000) is as shown in the screenshot attached below.
 ![image](https://github.com/user-attachments/assets/65d86a30-62ad-468f-82b9-cd5610ca2ef0)
 ![image](https://github.com/user-attachments/assets/1b983043-965a-42c4-8e6f-19539929020b)
 ![image](https://github.com/user-attachments/assets/55b7cb95-267c-4baf-95d1-a14f99793a37)
