@@ -18,3 +18,23 @@ Entry for Route53 is as shown in the screenshot attached below.
 
 Finally you can access the Swiggy-Clone Application as shown in the screenshot attached below.
 ![image](https://github.com/user-attachments/assets/1072a97e-d7ab-48be-b7e5-45da0d6c7f04)
+
+
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+```
+Source Code:- https://github.com/kamalmohan217/Swiggy-Clone-App.git
+```
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+```
+Reference:-  https://muditmathur121.medium.com/securing-swiggy-clone-app-deployment-on-aws-a-comprehensive-guide-to-building-a-devsecops-pipeline-67bdd7ea004e
+```
